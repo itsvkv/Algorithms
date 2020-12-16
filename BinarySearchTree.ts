@@ -1,4 +1,4 @@
-class BinarySearchNode {
+export class BinarySearchNode {
   val;
   left = null;
   right = null;
@@ -7,7 +7,7 @@ class BinarySearchNode {
   }
 }
 
-class BinarySearchTree {
+export class BinarySearchTree {
   root: BinarySearchNode = null;
   constructor() {
   }
@@ -16,14 +16,6 @@ class BinarySearchTree {
     let newNode = new BinarySearchNode(val);
     if (this.root == null) {
       this.root = newNode;
-      return this;
-    }
-    if (this.root.left == null && val < this.root.val) {
-      this.root.left = newNode;
-      return this;
-    }
-    if (this.root.right == null && val > this.root.val) {
-      this.root.right = newNode;
       return this;
     }
     let current = this.root;
@@ -48,4 +40,33 @@ class BinarySearchTree {
       }
     }
   }
+
+  find(val) {
+    if (this.root == null) {
+      return -1;
+    }
+
+    var current = this.root;
+    while (current) {
+      if (current.val == val) {
+        return true;
+      }
+      if (val < current.val) {
+        current = current.left;
+      }
+      if (val > current.val) {
+        current = current.right;
+      }
+    }
+    return false;
+  }
 }
+
+var bst = new BinarySearchTree();
+bst.insert(10);
+bst.insert(1);
+bst.insert(0);
+bst.insert(-1)
+bst.insert(0.5)
+console.log(bst.find(0));
+
