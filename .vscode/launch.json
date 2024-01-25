@@ -7,24 +7,15 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\maxSubarraySum.ts",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "nodemon",
-            "runtimeExecutable": "nodemon",
-            "program": "${workspaceFolder}/singleLinkedList.js",
+            "name": "ts-node",
+            "runtimeExecutable": "ts-node",
+            "program": "${workspaceFolder}/QuickSort.ts",
             "restart": false,
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "skipFiles": [
                 "<node_internals>/**"
             ]
-        }
-    ]
+        },
+    ],
 }
