@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "ts-node",
             "runtimeExecutable": "ts-node",
-            "program": "${workspaceFolder}/QuickSort.ts",
+            "program": "${workspaceFolder}/addTwoNumbers.ts",
             "restart": false,
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
