@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Run Current TS File",
+    "command": "bun",
+    "args": ["$ZED_FILE"],
+    "use_new_terminal": false,
+  },
+  {
+    "label": "Set Algorithm to Run ",
+    "command": "bun",
+    "args": ["src/scripts/addToRun.ts", "$ZED_FILE"],
+    "tags": ["algorithm"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+  },
+]

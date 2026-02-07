@@ -1,21 +1,19 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "ts-node",
-            "runtimeExecutable": "ts-node",
-            "program": "${workspaceFolder}/addTwoNumbers.ts",
-            "restart": false,
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
-        },
-    ],
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "bun run",
+      "runtimeExecutable": "bun",
+      "program": "${workspaceFolder}/src/run.ts",
+      "restart": false,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+    },
+  ],
 }
